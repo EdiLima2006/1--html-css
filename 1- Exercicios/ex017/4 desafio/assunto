@@ -1,0 +1,111 @@
+(header)--------
+
+<h1>Desenvolvimento Web</h1>
+<p>Aprendendo HTML, CSS e JavaScript</p>
+
+
+
+(nav)------------
+
+<a href="#">Inicio</a>
+<a href="#">HTML</a>
+<a href="#">CSS</a>
+<a href="#">JavaScript</a>
+<a href="#">Contato</a>
+
+
+
+(main)------------
+
+<p>
+O desenvolvimento web é responsável pela criação de sites e aplicações para internet.
+Com HTML, CSS e JavaScript é possível criar páginas modernas, responsivas e interativas.
+</p>
+
+
+
+(article)----------
+{h1}---------------
+
+<h1>O que é HTML?</h1>
+<p>
+O HTML é a linguagem responsável pela estrutura de uma página web.
+Com ele podemos criar títulos, textos, imagens, vídeos, links e vários outros elementos.
+</p>
+
+
+{h2}---------------
+
+<h2>O que é CSS?</h2>
+<p>
+O CSS é utilizado para estilizar páginas web.
+Ele permite adicionar cores, sombras, animações, espaçamentos e criar layouts modernos.
+</p>
+
+
+
+{h2}---------------
+
+<h2>O que é JavaScript?</h2>
+<p>
+O JavaScript adiciona interatividade aos sites.
+Com ele é possível criar menus dinâmicos, animações, sistemas e diversas funcionalidades.
+</p>
+
+
+{lista não ordenada}----------
+
+<ul>
+    <li>HTML5</li>
+    <li>CSS3</li>
+    <li>JavaScript</li>
+    <li>Responsividade</li>
+    <li>Front-End</li>
+</ul>
+
+
+{lista ordenada}---------------
+
+<ol>
+    <li>Aprender HTML</li>
+    <li>Aprender CSS</li>
+    <li>Aprender JavaScript</li>
+    <li>Criar projetos</li>
+    <li>Publicar sites</li>
+</ol>
+
+
+
+{aside}-----------------------
+
+<h2>Curiosidades</h2>
+
+<p>
+O primeiro site da história foi criado em 1991.
+Hoje existem bilhões de páginas web na internet.
+</p>
+
+
+
+{footer}---------------------
+
+<p>Site desenvolvido por Ng © 2026</p>
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+<a href="#">Saiba Mais</a>
+
+<a href="#">Cursos</a>
+
+<a href="#">Contato</a>
+
+
+

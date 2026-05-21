@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de caixa</title>
+    <style>
+/*          
+para transformar um inline em um block
+ou um block em um inline
+
+            display: block;
+            display: inline;
+*/
+
+
+
+
+        body{
+            background-image: linear-gradient(to right, rgb(238, 182, 182), rgb(221, 215, 255));
+        }
+        h1{
+            /*COR DA CAIXA DO CONTEUDO*/
+            background-color: rgb(218, 219, 219);
+
+            /*LARGURA E AUTURA DO CONTEUDO*/
+            width: 373px;
+            height: 39px;
+
+/*---------------------------------------------------------------------------------------------
+BORDA
+código simplificado
+
+            border-width: 7px;
+            border-style: solid;
+            border-color: crimson;
+
+*/          border: 7px solid crimson;
+
+            
+
+
+/*---------------------------------------------------------------------------------------------
+ESPAÇO ENTRE A BORDA E O CONTEUDO
+código simplificado
+
+            padding-top: 10px;                PARTE DE CIMA 
+            padding-right: 30px;              PARTE DIREITA 
+            padding-bottom: 10px;             PARTE DE BAIXO
+            padding-left: 30px;               PARTE ESQUERDA 
+-------------------------------------------------------------------------------------------------------------------
+            quando usamos padding: 10px 30px; o 10px e a parte de cima e baixo, o 30px e direita e esquerda
+
+*/          padding: 10px 30px; /*se todas linhas for iguais exemplo todos for 10px:
+
+                                                            (JEITO ERRADO)
+                                                            padding: 10px 10px 10px 10px;
+
+                                                            (JEITO CERTO)
+                                                            padding: 10px;
+*/
+            
+
+/*--------------------------------------------------------------------------------------------
+MARGEM DO CONTEUDO
+código simplificado
+
+            margin-top: 30px;                  PARTE DE CIMA
+            margin-right: 10px;                PARTE DIREITA
+            margin-bottom: 25px;               PARTE DE BAIXO
+            margin-left: 40px;                 PARTE ESQUERDA
+
+            auto na parte direita e esquerda para centralizar no meio da tela
+*/          margin: 30px auto 25px auto;
+
+/*
+            outline-width: 3px;
+            outline-style: dashed;
+            outline-color: rgb(134, 72, 192);
+
+*/          outline: 3px dashed rgb(134, 72, 192);
+
+        }
+        a{
+
+            border: 3px solid rgb(220, 20, 63);
+
+            padding: 0px 2px 0px 2px;
+        }
+/*
+ORDEM DO padding E margin(top, right, bottom, left)
+ORDEM DO border E outline(width, style, color)
+*/
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo fuciona.</p>
+</body>
+</html>

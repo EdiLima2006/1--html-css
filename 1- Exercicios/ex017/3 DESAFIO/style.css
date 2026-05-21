@@ -1,0 +1,130 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "MinhaFonte";
+    src: url("pacote/fontes/idroid.otf") format("opentype");
+}
+@font-face {
+    font-family: "MinhaFonti";
+    src: url("pacote/fontes/idroiid.otf") format("opentype");
+}
+body{
+    background-color: aquamarine;
+    margin: 0;
+}
+header{
+    background: linear-gradient(to top, rgb(14, 68, 43), rgb(39, 211, 159));
+    padding: 30px;
+    margin: 0;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.514);
+}
+header > h1{
+    font-family: sans-serif;
+    font-size: 3em;
+    color: white;
+    margin: 5px 0 35px 0;
+    text-align: center;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.37);
+}
+header > p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.37);
+    text-align: center;
+}
+nav{
+    background-color:rgba(16, 80, 50, 0.726) ;
+    margin: 0 0 -23px -15px;
+    font-weight: 600px;
+}
+nav > a{
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+
+}
+nav > a:hover{
+    text-decoration: underline;
+    color: darkkhaki;
+    font-weight: normal;
+}
+main{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    text-align: justify;
+    height: 2183px;
+    width: 800px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.342);
+}
+
+h1{
+font-family: MinhaFonte, Arial, Helvetica, sans-serif;
+    color: rgb(16, 87, 62);
+}
+h2{
+font-family: MinhaFonte, Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, rgba(26, 117, 87, 0.349), rgba(26, 117, 87, 0));
+    color: rgb(16, 87, 62);
+    padding: 5px;
+}
+footer{
+    background-color: rgb(14, 68, 43);
+    color: white;
+    text-align: center;
+    padding: 2px;
+    margin: 0;
+}
+footer > p{
+    margin: 2px;
+}
+section#video{
+    background-color: rgb(2, 70, 38);
+    margin: 00;
+    padding: 1px 1px 1px 1px;
+
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(36, 185, 116);
+    color: white;
+    padding: 5px;
+    border-radius: 7px 7px 0 0;
+}
+article#aprender{
+    height:390px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(208, 247, 234);
+    border-radius: 11px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.308);
+}
+article#aprender > p{
+    margin: 6px;
+}
+.check {
+    columns: 2;
+    list-style: none;
+    font-weight: 600;
+    color: rgb(43, 42, 42);
+    text-decoration: underline;
+}
+
+.check li::before {
+    content: "✔ ";
+    color: rgb(0, 0, 0);
+
+}
+ section#final{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 23px 1px 1px 1px;
+ }
+ p{
+    text-indent: 25px;
+ }
+ a.verde{
+    color: rgb(25, 131, 60);
+    font-weight: 600;
+ }

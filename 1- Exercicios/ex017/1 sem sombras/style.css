@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+#bodymenu{
+    background-color: rgb(180, 233, 233);
+
+}
+body{
+      background-color: rgb(180, 233, 233);  
+}
+main{
+    background-color: white;
+    border: 5px solid rgb(3, 61, 42);
+    width: 500px;
+    height: 500px;
+    padding: 15px 15px;
+    border-radius: 18px;
+    margin: auto;
+}
+#h1menu{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(2, 65, 65);
+    width: 102px;
+    height: 50px;
+    margin: 30px auto 30px auto;
+
+
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(1, 65, 65);
+}
+a{
+    color: rgb(77, 26, 88);
+    font-weight: 600;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>    
+    <link rel="stylesheet" href="style.css">
+    <style>
+/*-------------------------------------------------------------------------------*/
+        body{
+        background-color: rgb(236, 228, 177);
+        font-family: Arial, Helvetica, sans-serif;
+        }
+/*-------------------------------------------------------------------------------*/
+        a{
+            color: rgb(1, 46, 12);
+        }
+/*-------------------------------------------------------------------------------*/
+        .especial{
+        background-color: rgb(218, 81, 176);
+        color: rgb(255, 255, 255);
+        }
+        .especial::before{
+            content: '⇒ ' ;
+        }
+
+        .especial::after{
+            content: ' ⇐' ;
+        }
+/*-------------------------------------------------------------------------------*/
+        .semsublinhado{
+            text-decoration: none; /*TIRAR SUBLINHADO*/
+            font-weight: bold; /*DEIXAR EM NEGRITO*/
+
+        }
+/*-------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------*/
+        a:visited{
+        color: rgb(77, 4, 4);
+        }
+/*-------------------------------------------------------------------------------*/
+        a:hover{ /*HOVER(QUANDO PASSAR O MOUSE EM CIMA)*/
+            color: black;/*cor que vai ficar o link*/
+            transition: 0.1s; /*da um atraso na hora de mudar a cor*/
+            text-decoration: underline; /* SUBLINHAR */
+            font-weight: normal; /*DEIXAR A FONTE NORMAL SEM NEGRITO*/
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;/*MUDAR TIPO DA FONTE*/
+        }
+/*-------------------------------------------------------------------------------*/
+        a:active{
+            color: rgb(97, 116, 14);
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Personalisando links</h1>
+    <ul type="disc">
+        <li> <a href="https://www.instagram.com/ng.lm18/" target="_blank" rel="external" class="semsublinhado especial">Me Segue No Instagram</a> </li>
+        <li> <a href="https://www.youtube.com/@edivandolima7439" target="_blank" rel="external" class="semsublinhado">Se Inscreva Em Meu Canal</a> </li>
+        <li> <a href="https://www.cursoemvideo.com/" target="_blank" rel="external" class="semsublinhado">Site Que Eu Curso</a> </li>
+<br>
+<hr>
+<br>
+        <li> <a href="https://www.instagram.com" target="_blank" rel="external" class="especial">Não visitado</a> </li>
+        <li> <a href="https://www.youtube.com" target="_blank" rel="external">Visitado</a> </li>
+
+    </ul>
+<br>
+quando o site for visitado ele ficará vermelho
+<br>
+<a href="menu principal.html" style="color: blue;">voltar para o menu</a>
+</body>
+</html>
