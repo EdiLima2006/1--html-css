@@ -1,1 +1,117 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+/*
+// <weight>: Use a value from 100 to 800
+// <uniquifier>: Use a unique and descriptive class name
+
+.playpen-sans-<uniquifier> {
+  font-family: "Playpen Sans", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+
+/*
+// <weight>: Use a value from 100 to 800
+// <uniquifier>: Use a unique and descriptive class name
+
+.playpen-sans-<uniquifier> {
+  font-family: "Playpen Sans", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte3: "Playpen Sans", cursive;
+    --fonte2: "Titan One", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    min-height: 100%;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    font-family: "Titan One", sans-serif;
+    font-size: 6.5vw;
+    font-weight: 300;
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+header > p {
+    padding-bottom: 50px;
+    font-size: 1.4em;
+}
+
+@media (max-width: 600px) {
+    header > p {
+        font-size: 0.9em;
+    }
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+}
+section{
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 35px;
+}
+section > p{
+    padding-bottom: 2em;
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: rgb(31, 29, 29);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.479);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+#img02{
+    background-image: url(../imagens/background002.jpg);
+    background-position: right bottom;
+}
+.imagem > p{
+    background-color: rgba(0, 0, 0, 0.404);
+    display: inline-block;
+    padding: 20px 15px 20px 8px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.521);
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 8px;
+    text-align: center;
+
+}
