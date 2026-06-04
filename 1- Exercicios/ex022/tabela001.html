@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            background-color: rgba(185, 214, 223, 0.801);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            border: 5px solid black;
+        }
+        table#dois{
+            width: 400px;
+            border-collapse: collapse;
+            border: 0px solid black;
+        }
+        tr{
+            background-color: aliceblue;
+        }
+        tr.linha{
+            background-color: rgb(210, 214, 216);
+        }
+        td.linha{
+            background-color: rgb(210, 214, 216);
+        }
+        td{
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+        td.importante{
+            background-color: rgba(255, 255, 0, 0.233);
+        }
+        td.muitoimportante{
+            background-color: rgba(255, 0, 0, 0.233);
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--
+    HIERARQUIA DE TABELA (simples)
+    TABLE = tabela
+        TABLE ROW = linha de tabela
+            TABLE HEADER = cabeçalho de tabela
+            TABLE DATA = dado de tabela
+    -->
+            <table>
+                <tr> <!--PRIMEIRA LINHA-->
+                    <td>A1</td>
+                    <td>B1</td>
+                    <td class="importante">C1</td>
+                </tr>
+
+                <tr class="linha"> <!--SEGUNDA LINHA-->
+                    <td class="muitoimportante">A2</td>
+                    <td>B2</td>
+                    <td>C2</td>
+                </tr>
+
+                <tr> <!--TERCEIRA LINHA-->
+                    <td>A3</td>
+                    <td>B3</td>
+                    <td>C3</td>
+                </tr>
+
+                <tr class="linha"> <!--QUARTA LINHA-->
+                    <td>A4</td>
+                    <td>B4</td>
+                    <td>C4</td>
+                </tr>
+
+                <tr> <!--QUINTA LINHA-->
+                    <td>A5</td>
+                    <td class="importante">B5</td>
+                    <td>C5</td>
+                </tr>
+            </table>
+<br> <br> <br>
+            <table id="dois">
+                <tr> <!--PRIMEIRA LINHA-->
+                    <td class="linha">A1</td>
+                    <td>B1</td>
+                    <td class="linha">C1</td>
+                </tr>
+
+                <tr> <!--SEGUNDA LINHA-->
+                    <td>A2</td>
+                    <td class="linha">B2</td>
+                    <td>C2</td>
+                </tr>
+
+                <tr> <!--TERCEIRA LINHA-->
+                    <td class="linha">A3</td>
+                    <td>B3</td>
+                    <td class="linha">C3</td>
+                </tr>
+
+                <tr> <!--QUARTA LINHA-->
+                    <td>A4</td>
+                    <td class="linha">B4</td>
+                    <td>C4</td>
+                </tr>
+
+                <tr> <!--QUINTA LINHA-->
+                    <td class="linha">A5</td>
+                    <td>B5</td>
+                    <td class="linha">C5</td>
+                </tr>
+            </table>
+</body>
+</html>
