@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela</title>
+    <style>
+        table{
+            font-family: Arial, Helvetica, sans-serif;
+            width: 500px;
+            border-collapse: collapse;
+        }
+        thead{
+            background-color: rgb(228, 225, 225);
+        }
+        caption{
+            background-color: rgb(182, 181, 181);
+            border: 1px solid black;
+            border-bottom: none;
+            padding: 5px;
+            font-size: 1.3em;
+            font-weight: bolder;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        td.center{
+            text-align: center;
+        }
+        .destaque{
+            background-color: rgba(255, 226, 63, 0.527);
+        }
+        .nome{
+            background-color: rgba(255, 0, 0, 0.459);
+        }
+        .sexo{
+            background-color: rgba(0, 255, 21, 0.281);
+        }
+        .idd{
+            background-color: rgba(255, 0, 255, 0.226);
+        }
+        .prof{
+            background-color: rgba(0, 140, 255, 0.397);
+        }
+
+
+
+        .cnome{
+            background-color: rgba(0, 81, 255, 0.459);
+        }
+        .csexoidd{
+            background-color: rgba(0, 255, 64, 0.281);
+        }
+
+        .cprof{
+            background-color: rgba(98, 0, 255, 0.397);
+        }
+    </style>
+</head>
+<body>
+    ------------------------------------------------------------------------------------------------------1
+    <table>
+        <caption>Cadastro</caption>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lucas</td>
+                <td class="center">M</td>
+                <td class="center">21</td>
+                <td>Reporter</td>
+            </tr>
+            <tr class="destaque">
+                <td>Marta</td>
+                <td class="center">F</td>
+                <td class="center">34</td>
+                <td>Advogada</td>
+            </tr>
+            <tr>
+                <td>Lucia</td>
+                <td class="center">F</td>
+                <td class="center">19</td>
+                <td>Dançarina</td>
+            </tr>
+            <tr>
+                <td>Daniel</td>
+                <td class="center">M</td>
+                <td class="center">46</td>
+                <td>Mecanico</td>
+            </tr>
+            <tr class="destaque">
+                <td>Maria</td>
+                <td class="center">F</td>
+                <td class="center">23</td>
+                <td>Medica</td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td class="center">M</td>
+                <td class="center">34</td>
+                <td>Cantor</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+------------------------------------------------------------------------------------------------------
+2
+    <table>
+        <colgroup>
+            <col class="nome">
+            <col class="sexo">
+            <col class="idd">
+            <col class="prof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lucas</td>
+                <td class="center">M</td>
+                <td class="center">21</td>
+                <td>Reporter</td>
+            </tr>
+            <tr>
+                <td>Marta</td>
+                <td class="center">F</td>
+                <td class="center">34</td>
+                <td>Advogada</td>
+            </tr>
+            <tr>
+                <td>Lucia</td>
+                <td class="center">F</td>
+                <td class="center">19</td>
+                <td>Dançarina</td>
+            </tr>
+            <tr>
+                <td>Daniel</td>
+                <td class="center">M</td>
+                <td class="center">46</td>
+                <td>Mecanico</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td class="center">F</td>
+                <td class="center">23</td>
+                <td>Medica</td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td class="center">M</td>
+                <td class="center">34</td>
+                <td>Cantor</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    ------------------------------------------------------------------------------------------------------3
+
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexoidd" span="2">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lucas</td>
+                <td class="center">M</td>
+                <td class="center">21</td>
+                <td>Reporter</td>
+            </tr>
+            <tr>
+                <td>Marta</td>
+                <td class="center">F</td>
+                <td class="center">34</td>
+                <td>Advogada</td>
+            </tr>
+            <tr>
+                <td>Lucia</td>
+                <td class="center">F</td>
+                <td class="center">19</td>
+                <td>Dançarina</td>
+            </tr>
+            <tr>
+                <td>Daniel</td>
+                <td class="center">M</td>
+                <td class="center">46</td>
+                <td>Mecanico</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td class="center">F</td>
+                <td class="center">23</td>
+                <td>Medica</td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td class="center">M</td>
+                <td class="center">34</td>
+                <td>Cantor</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+
+
+</body>
+</html>
