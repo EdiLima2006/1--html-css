@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão</title>
+    <style>
+        form{
+            padding: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Revisando tudo sobre formulário</h1>
+<hr>
+    <h2>tipo 1</h2>
+        <form action="cadastro.php" method="post">
+            <div>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required placeholder="Ex: Felipe">
+            </div>
+            <div>
+                <label for="isobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="isobrenome" required placeholder="Ex: Santos">
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+<hr>
+
+
+    <h2>tipo 2</h2>
+<hr>
+        <form action="cadastro.php" method="get">
+            <div>
+                <label for="iusu">Usuario:</label>
+                <input type="text" name="usu" id="iusu" required minlength="2" maxlength="15" placeholder="Ex: João">
+            </div>
+            <div>
+                <label for="isenha">Senha:</label>
+                <input type="password" name="senha" id="isenha" required minlength="8" maxlength="15" placeholder="Uma senha segura">
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+<hr>
+
+
+    <h2>tipo 3</h2>
+<hr>
+        <form action="cadastro.php" method="get">
+            <div>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required minlength="2" maxlength="50" placeholder="Nome completo" autocomplete="name">
+            </div>
+            <div>
+                <label for="iperiodo">Periodo letivo:</label>
+                <input type="month" name="periodo" id="iperiodo" value="2026-06" required>
+            </div>
+            <div>
+                <label for="idia">Data da prova:</label>
+                <input type="date" name="dia" id="idia" value="2026-06-28" required>
+            </div>
+            <div>
+                <label for="ihora">Hora da prova:</label>
+                <input type="time" name="hora" id="ihora" value="15:00" required>
+            </div>
+            <div>
+                <label for="iemail">Email do aluno:</label>
+                <input type="email" name="email" id="iemail" placeholder="Ex: gabrielsilva762@gmail.com" size="23" required>
+
+            </div>
+            <div>
+                <label for="imedia">Média da prova:</label>
+                <input type="number" name="media" id="imedia" min="0" max="10" step="0.1" value="5" required>
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+<hr>
+
+
+    <h2>tipo 4</h2>
+<hr>
+        <form action="cadastro.php" method="get">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div>
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome">
+                </div>
+                <div>
+                    <label for="iemail">Email:</label>
+                    <input type="email" name="email" id="iemail">
+                </div>
+                <div>
+                    <label for="itel">Fone:</label>
+                    <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx)xxxxx-xxxx">
+                </div>
+            </fieldset>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+<hr>
+
+
+    <h2>tipo 5</h2>
+<hr>
+        <form action="cadastro.php" method="get">
+            <div>
+                <fieldset>
+                    <legend>Sexo</legend>
+                    <input type="radio" name="sexo" id="imas"> <label for="imas">Masculino</label> <br>
+                    <input type="radio" name="sexo" id="ifem"> <label for="ifem">Feminino</label>
+                </fieldset>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend>Esportes favoritos</legend>
+                    <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label> <br>
+                    <input type="checkbox" name="esvol" id="iesvol"> <label for="iesvol">Volei</label> <br>
+                    <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label>
+                </fieldset>
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+<hr>
+
+
+    <h2>tipo 6</h2>
+<hr>
+        <form action="cadastro.php" method="get">
+            <div>
+                <label for="icor">Escolha uma cor:</label>
+                <input type="color" name="cor" id="icor" value="lightgrey">
+            </div>
+            <div>
+                <label for="inivel">Nivel de satisfação:</label>
+                <input type="range" name="nivel" id="inivel" min="0" max="10" value="3" oninput="ival.innerHTML = Number(inivel.value)">
+            </div>
+            <div>
+                <output id="ival">3</output>
+            </div>
+            <div>
+                <label for="ifoto">Foto para perfil:</label>
+                <input type="file" name="foto" id="ifoto">
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+<hr>
+
+
+    <h2>tipo 7</h2>
+<hr>
+        <form action="cadastro.php" method="post">
+            <div>
+                <label for="iestado">Estado</label>
+                <select name="estado" id="iestado">
+                    <optgroup label="Sudeste">
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio De Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                    </optgroup>
+
+                    <optgroup label="Nordeste">
+                        <option value="BA">Bahia</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="PE">Pernambuco</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label for="ipro">Profissão</label>
+                <input type="text" name="prof" id="iprof" list="listap" placeholder="Esolha sua Profissão">
+                <datalist id="listap">
+                    <option value="ADM">Administrador</option>
+                    <option value="DEV">Desenvolvedor</option>
+                    <option>Professor</option>
+                    <option>Contabilista</option>
+                </datalist>
+            </div>
+            <div>
+                <label for="icom">Comentario</label> <br>
+                <textarea name="com" id="icom" cols="50" rows="20"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+<hr>
+
+
+    <h2>tipo 8</h2>
+<hr>
+        <form action="cadastro.php" method="get">
+            
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+<hr>
+
+
+    <h2>tipo 9</h2>
+<hr>
+        <form action="cadastro.php" method="get">
+            
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+<hr>
+
+
+    <h2>tipo 10</h2>
+<hr>
+        <form action="cadastro.php" method="get">
+            
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+<hr>
+</body>
+</html>
