@@ -211,6 +211,22 @@
 <hr>
         <form action="cadastro.php" method="get">
 
+            <div>
+                <label for="inum1">Numero:</label>
+                <input type="number" name="num1" id="inum1" 
+                oninput="isoma.innerHTML= Number(inum1.value) + Number(inum2.value)">
+            </div>
+
+            <div>
+            <label for="inum2">Numero:</label>
+            <input type="number" name="num2" id="inum2" 
+            oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+            </div>
+
+            <div>
+                <label for="isoma">soma</label>
+                <output id="isoma">0</output>
+            </div>
             
             <div>
                 <input type="submit" value="Enviar">
@@ -223,7 +239,13 @@
     <h2>tipo 9</h2>
 <hr>
         <form action="cadastro.php" method="get">
-            
+            <div>
+                <label for="ivalor">Valor</label>
+                <input type="range" name="valor" id="ivalor" min="0" max="10" value="3" oninput="ival.innerHTML = Number(ivalor.value)">
+            </div>
+            <div>
+                <output id="ival">3</output>
+            </div>
             <div>
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Limpar">
@@ -235,7 +257,20 @@
     <h2>tipo 10</h2>
 <hr>
         <form action="cadastro.php" method="get">
-            
+            <div>
+                <label for="iano">Ano que você nasceu</label>
+                <input type="number" name="ano" id="iano" min="1900" max="2026" value="2000" oninput="calcIdade()">
+            </div>
+            <div>
+                <label for="iidade">Sua idade é</label>
+                <output id="iidd">26</output>
+            </div>
+            <script>
+                function calcIdade() {
+                    let anoatualizado = new Date().getFullYear()
+                    iidd.innerHTML = Number(anoatualizado) - Number(iano.value)
+                }
+            </script>
             <div>
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Limpar">
