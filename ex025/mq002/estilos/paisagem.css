@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+
+body{
+    background: url(../imagens/cev-landscape.jpg);
+    background-position: left bottom;
+    background-size: cover;
+}
+h1{
+    font-size: 4em;
+}
+
+/*CONFIGURAÇÕES PAISAGEM(DEITADO)*/
