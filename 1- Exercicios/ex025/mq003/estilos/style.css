@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+@media all {
+        /*Gerais*/
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html, body{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(27, 27, 27);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        h1{
+            text-align: center;
+            color: white;
+            padding: 10px;
+            text-shadow: 2px 2px 0px rgba(255, 0, 0, 0.452);
+        }
+
+
+}
+
+        /*Retratro*/
+        @media screen and (orientation: portrait) {
+            body{
+                background: url(../imagens/cev-portrait.jpg);
+                background-color: rgb(38, 0, 255);
+                background-position: center bottom;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            h1{
+                font-size: 3em;
+            }
+        }
+        
+
+
+        /*Paisagem*/
+        @media screen and (orientation: landscape) {
+           body{
+                background: url(../imagens/cev-landscape.jpg);
+                background-position: left bottom;
+                background-size: cover;
+            }
+            h1{
+                font-size: 1.5em;
+                text-shadow: 2px 2px 5px black;
+            } 
+        }
+        
