@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
-@media all {
-        /*Gerais*/
+@media all{
         *{
             margin: 0;
             padding: 0;
@@ -23,8 +22,8 @@
             text-shadow: 2px 2px 0px rgba(255, 0, 0, 0.452);
         }
 
-
 }
+
 
         /*Retratro*/
         @media screen and (orientation: portrait) {
@@ -36,11 +35,10 @@
                 background-size: contain;
             }
             h1{
-                font-size: 3em;
+                font-size: 2.5em;
             }
         }
         
-
 
         /*Paisagem*/
         @media screen and (orientation: landscape) {
@@ -50,8 +48,6 @@
                 background-size: cover;
             }
             h1{
-                font-size: 1.5em;
-                text-shadow: 2px 2px 5px black;
+                font-size: 4em;
             } 
         }
-        
