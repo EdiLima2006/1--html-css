@@ -1,0 +1,30 @@
+@charset "UTF-";
+
+/* todas  as mídias */
+
+
+/*print*/
+@media print {
+    body{
+        background: black url(../imagens/back-print.jpg);
+    }
+
+    img#phone{
+    display: none;
+    }
+    img#tablet{
+        display: none;
+    }
+    img#print{
+        display: none;
+    }
+    img#pc{
+        display: none;
+    }
+    img#tv{
+        display: none;
+    }
+    
+}
+
+
