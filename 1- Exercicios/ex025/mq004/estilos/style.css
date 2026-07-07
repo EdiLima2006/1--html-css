@@ -4,7 +4,7 @@
 
 *{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3em;
+    font-size: 1.05em;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -22,7 +22,7 @@ body{
 
 main{
     background-color: rgba(255, 255, 255, 0.63);
-    width: 90vw;
+    width: 50vw;
     margin: auto;
     border-radius: 10px;
     margin-top: 20px;
