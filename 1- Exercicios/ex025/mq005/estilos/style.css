@@ -29,3 +29,7 @@ menu a{
     color: white;
     text-decoration: none;
 }
+
+menu li:hover{
+    padding: 11px;
+}
