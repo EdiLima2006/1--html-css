@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+body, html{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgrey;
+
+}
+
+main{
+    background-color: white;
+    min-width: 300px;
+    max-width: 900px;
+    padding: 10px;
+    margin: auto;
+}
+menu{
+    margin-left: -80px;
+}
+
+menu li {
+    display: inline-flex;
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.87);
+
+}
+menu a{
+    color: white;
+    text-decoration: none;
+}
